@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cobra Group — Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0D0F12;--ink-2:#151920;--line:rgba(255,255,255,.1);--grey:#98A2AD;
+  --blue:#2E86C4;--orange:#E8791E;--green:#4E9E45;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree",system-ui,sans-serif;background:var(--ink);color:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-weight:800;letter-spacing:-.025em;line-height:1.06}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.kick{font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)}
+
+.top{display:flex;justify-content:space-between;align-items:center;height:76px;border-bottom:1px solid var(--line)}
+.top .b{font-weight:900;letter-spacing:-.02em;font-size:1.15rem}
+.top .b span{color:var(--orange)}
+.top a.call{font-weight:700;font-size:.95rem;color:#fff}
+.top a.call:hover{color:var(--orange)}
+
+.hero{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,60px);text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(circle,rgba(46,134,196,.14),transparent 60%);pointer-events:none}
+.hero .kick{margin-bottom:26px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);max-width:16ch;margin:0 auto;position:relative}
+.hero h1 .c1{color:var(--blue)}.hero h1 .c2{color:var(--orange)}.hero h1 .c3{color:var(--green)}
+.hero p{color:var(--grey);font-size:clamp(1.05rem,1.6vw,1.3rem);max-width:56ch;margin:26px auto 0;font-weight:400}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:clamp(30px,4vw,50px) 0 clamp(64px,8vw,100px)}
+@media(max-width:880px){.cards{grid-template-columns:1fr;max-width:520px;margin:0 auto}}
+.card{background:var(--ink-2);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:var(--ac)}
+.card .top-bar{height:5px;background:var(--ac)}
+.card .body{padding:32px 28px 28px;display:flex;flex-direction:column;height:100%}
+.card .tag{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ac);margin-bottom:16px}
+.card h3{font-size:1.55rem;margin-bottom:10px;letter-spacing:-.02em}
+.card p{color:var(--grey);font-size:.98rem;font-weight:400;margin-bottom:24px;flex:1}
+.card .go{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:#fff;background:var(--ac);align-self:flex-start;padding:12px 22px;border-radius:8px;transition:.2s}
+.card .go svg{width:15px;height:15px;transition:.2s}
+.card:hover .go svg{transform:translateX(4px)}
+.card.blue{--ac:var(--blue)}.card.orange{--ac:var(--orange)}.card.green{--ac:var(--green)}
+
+.why{border-top:1px solid var(--line);padding:clamp(50px,7vw,84px) 0;text-align:center}
+.why h2{font-size:clamp(1.5rem,3vw,2.2rem);max-width:20ch;margin:14px auto 0}
+.why .row{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.why .row .i{max-width:22ch}
+.why .row .i b{display:block;font-size:1.05rem;margin-bottom:6px}
+.why .row .i span{color:var(--grey);font-size:.92rem}
+
+.ft{border-top:1px solid var(--line);padding:28px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:var(--grey)}
+.ft a{color:var(--orange)}
+.ribbon{background:var(--ink-2);text-align:center;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;padding:9px;color:var(--grey);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="b">COBRA <span>GROUP</span></div>
+    <a class="call" href="tel:02086655960">020 8665 5960</a>
+  </div>
+
+  <section class="hero">
+    <div class="kick">Concept · Prepared by Nu Media Group</div>
+    <h1>Three specialist trades. <span class="c1">One</span> accountable <span class="c3">team</span>.</h1>
+    <p>Concrete, digger hire and bamboo removal, each a specialist brand in its own right, run by one team from one yard. Separate front doors for customers and Google, one shared system behind them.</p>
+  </section>
+
+  <section class="cards">
+    <a class="card blue" href="cobra/">
+      <div class="top-bar"></div>
+      <div class="body">
+        <div class="tag">Ready-mix concrete</div>
+        <h3>Cobra Concrete</h3>
+        <p>Volumetric ready-mix, pumping, foundations and mix-barrow-lay for trade and DIY across London, Kent and Surrey.</p>
+        <span class="go">View concept <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <a class="card orange" href="cdh/">
+      <div class="top-bar"></div>
+      <div class="body">
+        <div class="tag">Digger hire &amp; groundworks</div>
+        <h3>CDH Digger Hire</h3>
+        <p>Owner-operated, tight-access digger and dumper hire, drainage, soakaways and groundworks around Croydon and South London.</p>
+        <span class="go">View concept <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <a class="card green" href="bamboo/">
+      <div class="top-bar"></div>
+      <div class="body">
+        <div class="tag">Bamboo removal specialist</div>
+        <h3>South London Bamboo Removal</h3>
+        <p>Survey-first bamboo removal and rhizome excavation, protecting boundaries, patios and property sales across South London.</p>
+        <span class="go">View concept <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+  </section>
+
+  <section class="why">
+    <div class="kick">The thinking</div>
+    <h2>Keep the specialist routes. Centralise the system.</h2>
+    <div class="row">
+      <div class="i"><b>Separate search intent</b><span>Each brand answers a different customer, so Google and buyers see the specialist, not a general menu.</span></div>
+      <div class="i"><b>One shared system</b><span>Single CMS, CRM, tracking and reporting behind all three, so every lead is measured.</span></div>
+      <div class="i"><b>Protect what works</b><span>Audit the existing value first, then improve, rather than throwing away three live shopfronts.</span></div>
+    </div>
+  </section>
+
+  <div class="ft">
+    <span>Cobra Group · concept for tomorrow's meeting</span>
+    <span>Prepared by <a href="https://www.numediagroup.co.uk/">Nu Media Group</a></span>
+  </div>
+</div>
+<div class="ribbon">Concept mock-ups · Nu Media Group · not the live sites</div>
+</body>
+</html>
