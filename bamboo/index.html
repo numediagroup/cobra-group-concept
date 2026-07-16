@@ -159,20 +159,86 @@ footer .ct a{display:block;color:#fff;font-weight:600;margin-bottom:8px}footer .
 </div></div></section>
 
 <!-- problem -->
-<section class="sec problem" id="problem"><div class="wrap">
-  <div class="media reveal"><img src="assets/bam3.jpg" alt="Bamboo rhizome removal"></div>
-  <div class="reveal">
+<section class="sec digprob" id="problem"><div class="wrap">
+  <div class="head center reveal" style="margin-bottom:34px">
     <div class="kick">Why bamboo is different</div>
-    <h2>The problem is <em>under the ground</em></h2>
-    <p>Cutting bamboo back does nothing. It spreads through underground rhizomes that can run metres from the original plant, lifting paving, pushing through boundaries and even coming up in a neighbour's garden.</p>
-    <p>That is why a proper job means excavating the root system, not just clearing what you can see.</p>
-    <div class="risks">
-      <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Lifts patios &amp; driveways</b> <span>as rhizomes push up under hard surfaces</span></div></div>
-      <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Crosses boundaries</b> <span>into neighbouring gardens and causes disputes</span></div></div>
-      <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Threatens a sale</b> <span>flagged in surveys and worrying to buyers</span></div></div>
-    </div>
+    <h2>The problem is under the ground</h2>
+    <p>Cutting bamboo back does nothing. What you see is a fraction of the plant. Reveal the ground below and watch how far the rhizomes really run.</p>
+  </div>
+  <div class="cut reveal" id="cut">
+    <svg viewBox="0 0 1000 460" preserveAspectRatio="xMidYMid slice" aria-label="Cross-section of bamboo showing underground rhizomes">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEBF5"/><stop offset="1" stop-color="#E9F3E4"/></linearGradient>
+        <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5F4632"/><stop offset="1" stop-color="#3C2C1F"/></linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1000" height="180" fill="url(#sky)"/>
+      <rect x="0" y="180" width="1000" height="280" fill="url(#soil)"/>
+      <rect class="xray" x="0" y="180" width="1000" height="280" fill="#EAF6FF" opacity="0"/>
+      <!-- surface -->
+      <rect x="0" y="172" width="1000" height="12" fill="#4F8C39"/>
+      <g class="patio"><rect x="60" y="158" width="220" height="16" rx="2" fill="#C2C7CD"/><rect x="60" y="158" width="220" height="4" fill="#D8DCE1"/></g>
+      <!-- boundary / neighbour -->
+      <g stroke="#7C6144" stroke-width="4"><line x1="830" y1="120" x2="830" y2="176"/><line x1="812" y1="132" x2="848" y2="132"/><line x1="812" y1="150" x2="848" y2="150"/></g>
+      <!-- bamboo above ground -->
+      <g class="bamboo" fill="none" stroke="#3E7D32" stroke-width="9" stroke-linecap="round">
+        <path d="M488 176 L484 40"/><path d="M512 176 L512 26"/><path d="M536 176 L542 52"/>
+        <g stroke-width="4"><path d="M484 70 h20"/><path d="M484 104 h20"/><path d="M484 140 h20"/><path d="M512 58 h22"/><path d="M512 96 h22"/><path d="M512 134 h22"/><path d="M540 84 h20"/><path d="M540 120 h20"/></g>
+      </g>
+      <g fill="#5AA23E" class="bamboo"><path d="M512 26 q34 -16 54 4 q-30 16 -54 -4z"/><path d="M484 40 q-34 -14 -54 6 q30 14 54 -6z"/><path d="M542 52 q30 -18 52 0 q-28 18 -52 0z"/></g>
+      <!-- rhizomes (revealed) -->
+      <g class="rhz" fill="none" stroke="#D3A96A" stroke-width="6" stroke-linecap="round">
+        <path d="M512 208 C 380 214 300 202 200 208 C 132 212 92 236 66 320"/>
+        <path d="M512 210 C 640 226 736 244 940 286"/>
+        <path d="M512 214 C 520 300 486 356 430 424"/>
+        <path d="M250 206 C 252 280 276 344 262 430" stroke-width="5"/>
+        <path d="M700 238 C 706 300 690 356 712 420" stroke-width="5"/>
+        <path d="M150 232 C 150 290 132 340 150 410" stroke-width="4"/>
+      </g>
+      <!-- new shoots far from parent -->
+      <g class="shoot" fill="none" stroke="#5AA23E" stroke-width="6" stroke-linecap="round">
+        <path d="M150 174 L150 132"/><path d="M138 150 q-14 -8 -22 2"/>
+        <path d="M905 174 L905 128"/><path d="M918 146 q14 -8 22 2"/>
+      </g>
+      <!-- labels -->
+      <g class="lbl" font-family="Figtree, sans-serif">
+        <g><line x1="70" y1="316" x2="70" y2="356" stroke="#fff" stroke-width="1.5" opacity=".5"/><text x="26" y="384" fill="#fff" font-size="16" font-weight="700" text-anchor="start">Spreads 3m+ underground</text></g>
+        <g><line x1="905" y1="128" x2="905" y2="98" stroke="#fff" stroke-width="1.5" opacity=".5"/><text x="984" y="86" fill="#fff" font-size="16" font-weight="700" text-anchor="end">Crosses the boundary</text></g>
+        <g><text x="170" y="150" fill="#26331d" font-size="15" font-weight="700" text-anchor="middle">Lifts the patio</text></g>
+      </g>
+    </svg>
+    <button class="cut-btn" id="cutBtn" type="button">Reveal what's underground</button>
+    <div class="cut-tag">Bamboo · live cross-section</div>
+  </div>
+  <div class="risks-row reveal">
+    <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Lifts patios &amp; driveways</b> <span>as rhizomes push up under hard surfaces</span></div></div>
+    <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Crosses boundaries</b> <span>into neighbouring gardens and causes disputes</span></div></div>
+    <div class="risk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><div><b>Threatens a sale</b> <span>flagged in surveys and worrying to buyers</span></div></div>
   </div>
 </div></section>
+<style>
+.digprob .cut{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(22,50,26,.2);aspect-ratio:1000/460;background:#3C2C1F}
+.digprob .cut svg{width:100%;height:100%;display:block}
+.digprob .cut .rhz path{stroke-dasharray:1700;stroke-dashoffset:1700;transition:stroke-dashoffset 1.7s cubic-bezier(.16,1,.3,1)}
+.digprob .cut.on .rhz path{stroke-dashoffset:0}
+.digprob .cut.on .rhz path:nth-child(2){transition-delay:.12s}
+.digprob .cut.on .rhz path:nth-child(3){transition-delay:.24s}
+.digprob .cut.on .rhz path:nth-child(4){transition-delay:.36s}
+.digprob .cut.on .rhz path:nth-child(5){transition-delay:.48s}
+.digprob .cut.on .rhz path:nth-child(6){transition-delay:.6s}
+.digprob .cut .xray{transition:opacity .9s ease}
+.digprob .cut.on .xray{opacity:.09}
+.digprob .cut .shoot,.digprob .cut .lbl{opacity:0;transition:opacity .7s ease 1s}
+.digprob .cut.on .shoot,.digprob .cut.on .lbl{opacity:1}
+.digprob .cut .patio{transition:transform 1s cubic-bezier(.16,1,.3,1) .7s;transform-box:fill-box;transform-origin:right center}
+.digprob .cut.on .patio{transform:rotate(-3.2deg) translateY(-3px)}
+.digprob .cut-btn{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--green);color:#fff;border:0;font-family:"Figtree";font-weight:700;font-size:.92rem;padding:14px 26px;border-radius:40px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.28);transition:.2s;display:inline-flex;align-items:center;gap:9px}
+.digprob .cut-btn:hover{background:var(--green-deep)}
+.digprob .cut-btn::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;opacity:.9}
+.digprob .cut.on .cut-btn{background:rgba(255,255,255,.14);backdrop-filter:blur(6px)}
+.digprob .cut-tag{position:absolute;top:16px;left:18px;font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#26331d;font-weight:700;opacity:.7}
+.digprob .risks-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+@media(max-width:760px){.digprob .risks-row{grid-template-columns:1fr;gap:14px}.digprob .cut-tag{display:none}}
+</style>
 
 <!-- process -->
 <section class="sec sec-soft" id="process"><div class="wrap">
@@ -250,6 +316,13 @@ footer .ct a{display:block;color:#fff;font-weight:600;margin-bottom:8px}footer .
 <script>
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cut=document.getElementById('cut'),cutBtn=document.getElementById('cutBtn');
+if(cut&&cutBtn){
+  const setBtn=()=>cutBtn.textContent=cut.classList.contains('on')?'Show the ground again':"Reveal what's underground";
+  cutBtn.addEventListener('click',()=>{cut.classList.toggle('on');setBtn();});
+  const cio=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){cut.classList.add('on');setBtn();cio.disconnect();}}),{threshold:.5});
+  cio.observe(cut);
+}
 </script>
 <!--
   ===========================================================================
